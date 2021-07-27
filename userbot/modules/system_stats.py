@@ -265,7 +265,7 @@ async def amireallyalive(alive):
     await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f"**ㅤㅤㅤㅤ 🌸𝐊𝐈𝐋𝐋𝐀𝐀 - 𝐂𝐀𝐍𝐓𝐈𝐊𝐊🌸**\n"
+        f"**ㅤㅤㅤㅤ 🌸𝐃𝐄𝐃𝐄 𝐁𝐄𝐋𝐀 - 𝐁𝐎𝐓🌸**\n"
         f"╔══════════╬════╬══════════╗ \n"
         f"╟⟩⟩ 🤴 • `ᴏᴡɴᴇʀ    :`[𝐊𝐈𝐋𝐋𝐀𝐀](t.me/msdedebela)             ㅤ ║\n"
         f"╟⟩⟩ 🖥️ • `ꜱʏꜱᴛᴇᴍ.   :`Ubuntu 20.10            ║\n"
@@ -274,7 +274,7 @@ async def amireallyalive(alive):
         f"╟⟩⟩ 👾 • `ʙᴏᴛ      :`v.{BOT_VER}                ㅤㅤㅤ ║\n"
         f"╟⟩⟩ 📂 • `ᴍᴏᴅᴜʟᴇ   :`{len(modules)} ㅤㅤㅤㅤㅤㅤㅤ   ║\n"
         f"╚══════════╬════╬══════════╝ \n"
-        f"🔰 : [𝗥𝗘𝗣𝗢-𝐊𝐈𝐋𝐋𝐀𝐀](https://github.com/BeeKingg/Killaa-Cantikkk)\n👥 : [𝗚𝗥𝗢𝗨𝗣](t.me/botkilaa)\n👤 : [𝗢𝗪𝗡𝗘𝗥](t.me/msdedebela)\n"
+        f"🔰 : [𝗥𝗘𝗣𝗢-𝐃𝐄𝐃𝐄](https://github.com/BeeKingg/Killaa-Cantikkk)\n👥 : [𝗚𝗥𝗢𝗨𝗣](t.me/botkilaa)\n👤 : [𝗢𝗪𝗡𝗘𝗥](t.me/msdedebela)\n"
     )
     if ALIVE_LOGO:
         try:
