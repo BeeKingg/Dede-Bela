@@ -223,7 +223,7 @@ async def pipcheck(pip):
         await pip.edit("Gunakan `.help pip` Untuk Melihat Contoh")
 
 
-@register(outgoing=True, pattern=r"^\.(?:kilalive)\s?(.)?")
+@register(outgoing=True, pattern=r"^\.(?:belalive)\s?(.)?")
 async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
@@ -260,21 +260,21 @@ async def amireallyalive(alive):
         await alive.delete()
 
 
-@register(outgoing=True, pattern=r"^\.(?:kila)\s?(.)?")
+@register(outgoing=True, pattern=r"^\.(?:bela)\s?(.)?")
 async def amireallyalive(alive):
     await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
         f"**ㅤㅤㅤㅤ 🌸𝐃𝐄𝐃𝐄 𝐁𝐄𝐋𝐀 - 𝐁𝐎𝐓🌸**\n"
         f"╔══════════╬════╬══════════╗ \n"
-        f"╟⟩⟩ 🤴 • `ᴏᴡɴᴇʀ    :`[𝐊𝐈𝐋𝐋𝐀𝐀](t.me/msdedebela)             ㅤ ║\n"
+        f"╟⟩⟩ 🤴 • `ᴏᴡɴᴇʀ    :`[𝐃𝐄𝐃𝐄](t.me/msdedebela)             ㅤ ║\n"
         f"╟⟩⟩ 🖥️ • `ꜱʏꜱᴛᴇᴍ.   :`Ubuntu 20.10            ║\n"
         f"╟⟩⟩ ⚙️ • `ᴛᴇʟᴇᴛʜᴏɴ  :`v.{version.__version__}                ㅤㅤ  ║\n"
         f"╟⟩⟩ 🐍 • `ᴘʏᴛʜᴏɴ.   :`v.{python_version()} ㅤㅤㅤㅤ         ║\n"
         f"╟⟩⟩ 👾 • `ʙᴏᴛ      :`v.{BOT_VER}                ㅤㅤㅤ ║\n"
         f"╟⟩⟩ 📂 • `ᴍᴏᴅᴜʟᴇ   :`{len(modules)} ㅤㅤㅤㅤㅤㅤㅤ   ║\n"
         f"╚══════════╬════╬══════════╝ \n"
-        f"🔰 : [𝗥𝗘𝗣𝗢-𝐃𝐄𝐃𝐄](https://github.com/BeeKingg/Killaa-Cantikkk)\n👥 : [𝗚𝗥𝗢𝗨𝗣](t.me/botkilaa)\n👤 : [𝗢𝗪𝗡𝗘𝗥](t.me/msdedebela)\n"
+        f"🔰 : [𝗥𝗘𝗣𝗢-𝐃𝐄𝐃𝐄](https://github.com/BeeKingg/Dede-Bela)\n👥 : [𝗖𝗛𝗔𝗡𝗡𝗘𝗟](t.me/BeKing_Bots)\n👤 : [𝗢𝗪𝗡𝗘𝗥](t.me/msdedebela)\n"
     )
     if ALIVE_LOGO:
         try:
@@ -311,7 +311,7 @@ async def redis(alive):
     await asyncio.sleep(2)
     output = (
         f"╭═──────╼═⌘═╾───────═\n"
-        f"┃🌸𝐊𝐈𝐋𝐋𝐀𝐀 - 𝐂𝐀𝐍𝐓𝐈𝐊𝐊🌸\n"
+        f"┃🌸𝐃𝐄𝐃𝐄 𝐁𝐄𝐋𝐀 - 𝐁𝐎𝐓🌸\n"
         f"╰═─────╼══⌘══╾─────═ \n"
         f" ❍ `Name     :` {DEFAULTUSER} \n"
         f" ❍ `Username :` @{user.username} \n"
@@ -321,8 +321,8 @@ async def redis(alive):
         f" ❍ `Bot Ver  :` {BOT_VER} \n"
         f" ❍ `Modules  :` {len(modules)} Modules \n"
         f"╭═───────╼⌘╾───────═ \n"
-        f"┃[𝗥𝗲𝗽𝗼](https://github.com/Killaa-Cantikkk)  |  [𝗢𝗪𝗡𝗘𝗥](t.me/msdedebela)  |  "
-        f"[𝗚𝗥𝗢𝗨𝗣](t.me/botkilaa)\n"
+        f"┃[𝗥𝗲𝗽𝗼](https://github.com/Dede-Bela)  |  [𝗖𝗛𝗔𝗡𝗡𝗘𝗟](t.me/BeKing_Bots)  |  "
+        f"[𝗢𝗪𝗡𝗘𝗥](t.me/msdedebela)\n"
         f"╰═──────╼═⌘═╾───────═")
     if ALIVE_LOGO:
         try:
@@ -375,7 +375,7 @@ CMD_HELP.update({
 })
 CMD_HELP.update({
     "alive":
-    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.alive` or `.on` or `.kilalive`"
+    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.alive` or `.on` or `.belalive`"
     "\n↳ : To see whether your bot is working or not."
     "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.aliveu` <text>"
     "\n↳ : Changes the 'user' in alive to the text you want."
